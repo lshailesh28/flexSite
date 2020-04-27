@@ -1,0 +1,41 @@
+<header >
+    <div id="desktop-view">
+        <h2> <a href="#">Company <span>Logo</span></a> </h2>
+        <nav class="">
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Blog</a></li>
+            <li>
+
+                <button class="getin-btn"><img src="/assets/icons/Icon.png">Get In Touch</button>
+
+            </li>
+        </nav>
+
+    </div>
+    <div class="drawer" id="mobile-view">
+        <span class="list-menu">
+            <i class="fa fa-bars" aria-hidden="true"  (click)="showdrawer()"></i>
+        </span>
+        <span class="logo-icon">
+            <h2> <a href="#">Company <span>Logo</span></a> </h2>
+        </span>
+        <span class="msg-icon">
+            <img src="/assets/icons/Icon.png">
+        </span>  
+    </div>
+    <div class="mobile-menu" *ngIf="show">
+        <nav class="">
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Blog</a></li>
+        </nav>   
+    </div>
+     
+</header>
+
+<!-- <header class="mobile-view">
+    
+</header> -->

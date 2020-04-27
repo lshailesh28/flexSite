@@ -1,0 +1,138 @@
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header {
+    // position: absolute;
+    // top:0;
+    // left: 0;
+
+    padding: 32px 100px 26px;
+    background-color: #2a2b2c;
+    #desktop-view {
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+    #mobile-view {
+        display: none;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 22px;
+        span {
+            color: #ee3b00;
+        }
+    }
+    nav {
+        display: -webkit-flex;
+        display: flex;
+        li {
+            margin: 0 15px;
+        }
+        li:first-child {
+            margin-left: 0;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+@media (max-width: 800px) {
+    header {
+        padding: 19px 20px 0px;
+        #desktop-view {
+            display: none;
+        }
+        #mobile-view {
+            display: flex;
+            // flex-direction: column;
+            width: 100%;
+            .list-menu{
+                text-align: left;
+                width: 20%;
+                .fa-bars{
+                    color: #ffffff;
+                    font-size: 22px
+                } 
+            }
+            .logo-icon{
+                text-align: center;
+                width: 60%;
+                a{
+                    color: #ffffff;
+                }
+            }
+            .msg-icon{
+                text-align: right;
+                width: 20%;
+                img{
+                    margin-top:4px;
+                }
+            }
+        }
+        
+        h2 {
+            margin-bottom: 15px;
+        }
+        nav {
+            li {
+                margin: 0 7px;
+            }
+        }
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        height: 90vh;
+        background-color: #2f2e2eed;
+        font-size: 20px;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        li{
+            padding: 20px;
+            text-transform: uppercase;
+        }
+    }
+    .mobile-menu{
+        nav{
+            flex-direction: column;
+        }
+    }
+}
+
+.getin-btn {
+    padding: 5px 20px;
+    background: #ee3b00;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    bottom: 4px;
+    font-size: 16px;
+    img {
+        position: relative;
+        top: 4px;
+        right: 4px;
+    }
+}
